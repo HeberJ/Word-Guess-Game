@@ -2,7 +2,7 @@
 //####################################################################
 
 //Array of words
-var wordArray = ["heber", "heber"];
+var wordArray = ["Heber", "heber"];
 //Chosing a random word
 var randWord = wordArray[Math.floor(Math.random() * wordArray.length)];
 
@@ -11,7 +11,7 @@ var underscoreArray = [];
 var rightGuessArray = [];
 var wrongGuessArray = []; 
 
-//Dom Manipulation Variables
+//HTML Variables
 var underscoreDiv = document.getElementById("underscores");
 
 
@@ -24,20 +24,23 @@ function createUnderscoreArray() {
     }
     return underscoreArray;
 }
-console.log(createUnderscoreArray());
+
+underscoreDiv.textContent = createUnderscoreArray().join(" ");
 
 // Listening for a key press
 document.addEventListener("keypress", function () {
     //Translate key code to a string and stores in letter
     var letter = String.fromCharCode(event.keyCode);
     
-    //
+    //Checking if the letter is in the word
     if (randWord.indexOf(letter) > -1) {
-        rightGuessArray.push(letter);
+        //rightGuessArray.push(letter);
         writeToUnderscoreArray(letter);
-        console.log(underscoreArray);
+        underscoreDiv.textContent = underscoreArray.join(" ");
     } else {
         wrongGuessArray.push(letter);
+        //Append child of wrong guess div to show wrong letters
+
         console.log(wrongGuessArray);
     }
 });
@@ -52,3 +55,4 @@ function writeToUnderscoreArray (letter) {
     }
 }
 
+//Need to handle in case of uppercase letters
