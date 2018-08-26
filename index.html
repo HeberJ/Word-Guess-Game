@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>WordGuessGame</title>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 </head>
+
 <body>
   <div class="container">
     <header>
-      <h1>
-        Hangman Game
-      </h1>
-      <h3>
-        Will you chill or hang?
-      </h3>
+      <h1 class="jumbotron text-center border-top-0">Hangman Game</h1>
+      <figure class="row">
+        <h3 class="col d-flex justify-content-center ">Will you chill or hang?</h3>
+      </figure>
 
-      <div id="underscores"></div>
-      <div id="correctGs">Correct Guesses</div>
-      <div id="wrongGs">Wrong Guesses
-      </div>
+      <figure class="row">
+        <div id="underscores" class="col d-flex justify-content-center"></div>
+      </figure>
+      <section class="row">
+        <div id="wrongGs" class="col d-flex justify-content-center">Wrong Guesses</div>
+      </section>
     </header>
   </div>
 
-  <script type="text/javascript" src="assets/javascript/game.js"></script>  
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>

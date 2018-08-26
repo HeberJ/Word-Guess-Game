@@ -1,1 +1,23 @@
+h1 {
+  font-family: Montserrat;
+  font-size: 60px;
+  color: #063263;
+  background-color: #a1eeff !important;
+}
 
+h3 {
+  font-family: Montserrat;
+  font-size: 40px;
+  background-color: #a1eeff;
+  padding-top:px;
+}
+
+
+
+ .jumbotron {
+  
+ }
+
+.centerMe {
+  margin: 0 auto;
+}
