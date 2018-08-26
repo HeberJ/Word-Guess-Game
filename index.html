@@ -12,18 +12,21 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <header>
-      <h1 class="jumbotron text-center border-top-0">Hangman Game</h1>
-      <figure class="row">
-        <h3 class="col d-flex justify-content-center ">Will you chill or hang?</h3>
-      </figure>
-
-      <figure class="row">
-        <div id="underscores" class="col d-flex justify-content-center"></div>
-      </figure>
-      <section class="row">
-        <div id="wrongGs" class="col d-flex justify-content-center">Wrong Guesses</div>
+      <h1 id="banner" class="jumbotron text-center">Hangman Game</h1>
+      <section id="centerSection" class="rounded-top">
+        <figure class="row">
+          <h3 class="col d-flex justify-content-center ">Will you chill or hang?</h3>
+        </figure>
+      
+        <figure class="row">
+          <div id="underscores" class="col d-flex justify-content-center"></div>
+        </figure>
+      </section>
+      <section id="wrongSection" class="row bg-danger text-white rounded-bottom">
+        <div id="headingForWrongGs" class="col d-flex justify-content-center">Wrong Guesses</div> 
+        <div id="wrongGs" class="col d-flex justify-content-center"></div>
       </section>
     </header>
   </div>

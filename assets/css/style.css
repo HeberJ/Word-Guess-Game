@@ -1,23 +1,42 @@
+
+body {
+  background-image: url("../images/blakeg.jpg");
+  background-size: 80%;
+}
+
 h1 {
   font-family: Montserrat;
   font-size: 60px;
   color: #063263;
-  background-color: #a1eeff !important;
 }
 
 h3 {
   font-family: Montserrat;
   font-size: 40px;
-  background-color: #a1eeff;
   padding-top:px;
 }
 
-
-
- .jumbotron {
-  
- }
-
 .centerMe {
   margin: 0 auto;
+}
+
+.jumbotron {
+  background-color: rgba(233, 236, 239, .8);
+}
+
+#centerSection {
+  font-family: Montserrat;
+  font-size: 200%;
+  color: #063263;
+  background-color: rgba(233, 236, 239, .8);
+  padding: 50px 0 50px 0;
+  margin: 0 10% 0 10%;
+}
+
+#wrongSection {
+  font-family: Montserrat;
+  font-size: 150%;
+  padding: 50px 0 50px 0;
+  margin: 0 10% 0 10%;
+
 }
